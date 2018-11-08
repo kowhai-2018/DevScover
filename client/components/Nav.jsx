@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import data from '../../data/data'
 
-const navItems = Object.keys(data)
+const navList = Object.keys(data)
 
 class Nav extends React.Component {
   constructor (props) {
@@ -13,9 +13,8 @@ class Nav extends React.Component {
     return (
       <div>
         <nav>
-          <h1>Nav bar</h1>
-          {navItems.map(navItem => {
-            return (<li> <Link to='/list'> {navItem} </Link></li>) 
+          {navList.map(navList => {
+            return (<li> <Link to={`/${navList}`}> {navList} </Link></li>) 
           })}
         </nav>
       </div>
