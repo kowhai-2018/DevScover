@@ -4,12 +4,15 @@ import React from 'react'
 class Home extends React.Component {
   render() {
     return (
-      <div>
-        <h1>DevScover</h1>
-        <p>
-          DevScover is a resource to help developers discover new technologies.
-        </p>
-        <hr/>
+      <div class='row'>
+        <div className='twelve columns'>
+          <h1>DevScover</h1>
+          <p>
+            DevScover is a resource to help developers discover new
+            technologies.
+          </p>
+          <hr />
+        </div>
       </div>
     )
   }

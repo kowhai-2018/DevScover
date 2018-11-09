@@ -41,6 +41,12 @@ const data = {
       name: 'Jest',
       description: 'Jest is a library for testing JavaScript code. It\'s an open source project maintained by Facebook, and it\'s especially well suited for React code testing, although not limited to that: it can test any JavaScript code.',
       link: 'https://jestjs.io/'
+    },
+    {
+      id: 2,
+      name: 'Enzyme',
+      description: 'Enzyme is a JavaScript Testing utility for React that makes it easier to assert, manipulate, and traverse your React Components\' output. Enzyme\'s API is meant to be intuitive and flexible by mimicking jQuery\'s API for DOM manipulation and traversal.',
+      link: 'https://airbnb.io/enzyme/'
     }
   ],
   Languages: [
