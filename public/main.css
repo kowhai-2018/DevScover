@@ -1,0 +1,15 @@
+
+.display{
+  display:flex;
+  flex-wrap: wrap;
+  margin:1em
+
+}
+
+.nav{
+  padding: 30px
+}
+
+.home{
+  padding: 30px
+}
