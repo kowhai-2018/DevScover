@@ -1,27 +1,23 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import data from '../../data/data'
 
-export default class LibraryList extends React.Component {
+export default class Item extends React.Component {
   render () {
     const { match } = this.props
-    const { list } = match.params
-    const libs = data[list]
+    const { name } = match.params
+    const libs = data[name]
+    // const { description } = match.params
 
-    console.log(libs[0])
+    var found = libs.find(function (element) {
+      return element === name
+    })
+    console.log(found)
 
     return (
       <div>
-        <h1>{list}</h1>
-        <nav>
-          {libs.map(lib => {
-            return (
-              <li key={libs.id}>
-                <Link to={`/${list}/${lib.name}`}> {lib.name} </Link>
-              </li>
-            )
-          })}
-        </nav>
+        <h1>{found.name}</h1>
+        <p>{found.description}</p>
+        <a href= {found.link}>Learn more</a>
       </div>
     )
   }

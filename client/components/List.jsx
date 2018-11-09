@@ -13,7 +13,7 @@ export default class LibraryList extends React.Component {
     return (
       <div>
         <h1>{list}</h1>
-        <nav>
+      <nav>
           {libs.map(lib => {
             return (
               <li key={libs.id}>
