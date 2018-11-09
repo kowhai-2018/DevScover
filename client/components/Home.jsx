@@ -8,8 +8,7 @@ class Home extends React.Component {
         <div className='twelve columns'>
           <h1>DevScover</h1>
           <p>
-            DevScover is a resource to help developers discover new
-            technologies.
+            DevScover is a resource to help developers discover new technologies.
           </p>
           <hr />
         </div>
