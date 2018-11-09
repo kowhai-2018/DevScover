@@ -8,8 +8,6 @@ export default class LibraryList extends React.Component {
     const { list } = match.params
     const libs = data[list]
 
-    console.log(libs[0])
-
     return (
       <div>
         <h1>{list}</h1>

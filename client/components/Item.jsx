@@ -3,15 +3,16 @@ import data from '../../data/data'
 
 export default class Item extends React.Component {
   render () {
-    const { match } = this.props
-    const { name } = match.params
+    // const { match } = this.props
+    console.log(this.props.match.params)
+    const { list: name } = this.props.match.params
     const libs = data[name]
     // const { description } = match.params
-
-    var found = libs.find(function (element) {
-      return element === name
+    // console.log(data)
+    console.log(libs)
+    var found = libs.find(function (item) {
+      return item == name.item
     })
-    console.log(found)
 
     return (
       <div>
