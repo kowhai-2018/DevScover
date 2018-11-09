@@ -14,14 +14,15 @@ const Item = ({ match }) => {
       <div className='twelve columns'>
         <h1>{_.startCase(list)}</h1>
         <hr />
+        <h1>{item}</h1>
+        <p>The description will go here for the selected item... at some stage.</p>
+        <a href={found.link}>Learn more</a>
+        <hr/>
         <Link to='/'>
           <h4>
             <FontAwesomeIcon icon={faUndo} />
           </h4>
         </Link>
-        <h1>{item}</h1>
-        <p>{found.description}</p>
-        <a href={found.link}>Learn more</a>
       </div>
     </div>
   )
